@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<!--   
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+
+
+</head>
+<body class="min-h-screen bg-Red font-poppins relative">
+  <div class="bg-intro-mobile md:bg-intro-desktop bg-cover bg-center bg-no-repeat absolute inset-0 -z-10"></div>
+  <section class="py-24 w-[90%] max-w-screen-lg mx-auto grid lg:grid-cols-2 gap-8 justify-items-center justify-center items-center md:py-12">
+    <div class="space-y-6 max-w-md text-center lg:text-left text-white">
+      <h1 class="text-3xl font-bold w-4/5 mx-auto md:text-4xl lg:text-[42px] lg:mx-0">Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
+      </p>
+    </div>
+
+    <div class="w-full max-w-[460px]">
+      <div class="bg-Blue py-5 mb-5 text-center md:text-sm rounded-lg shadow-[0_8px_2px_0_hsla(0,_0%,_0%,_0.20)]">
+        <p class="text-Grayish-Blue w-[70%] mx-auto"><strong class="text-white">Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+      <div class="bg-white w-full py-7 rounded-lg shadow-[0_8px_2px_0_hsla(0,_0%,_0%,_0.20)]">
+        <form action="" method="post" class="w-[87%] mx-auto space-y-4" id="formContact">
+          <div class="">
+            <input type="text" name="firstName" placeholder="First Name" class="input-form" required>
+          </div>
+          <div class="">
+            <input type="text" name="secondName" placeholder="Second Name" class="input-form" required>
+          </div>
+          <div class="">
+          <input type="email" name="userEmail" placeholder="Email Address Name" class="input-form" required>
+          </div>
+          <div class="">
+          <input type="password" name="userPassword" placeholder="Password" class="input-form" required>
+          </div>
+
+          <button class="bg-Green w-full hover:bg-Green/80 transition-colors text-white rounded-md py-5 uppercase font-semibold shadow-[0_5px_2px_0_hsla(154,_49%,_61%,_0.70)]">
+            Claim your free trial 
+          </button>
+          <p class="text-center text-[12px] text-Grayish-Blue">By clicking the button, you are agreeing to our <strong class="text-Red">Terms and Services</strong></p>
+        </form>
+        
+      </div>
+    </div>
+  </section>
+<!--   
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+   -->
+
+   <script src="./src/js/script.js"></script>
+</body>
+</html>
