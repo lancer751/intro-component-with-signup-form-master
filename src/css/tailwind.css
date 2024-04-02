@@ -4,6 +4,17 @@
 
 @layer components{
     .input-form{
-        @apply w-full text-Dark-Blue/90 text-base border-[1px] border-Dark-Blue/50 px-4 py-3 md:px-6 font-bold rounded-md focus:outline-none focus-within:border-Dark-Blue;
+        @apply w-full text-Dark-Blue/90 text-base border-[1px] border-Dark-Blue/50 px-4 py-3 md:px-6 font-bold rounded-md focus:outline-none focus:border-Dark-Blue;
+    }
+
+    .input-error{
+        @apply w-full text-Red text-base border-[1px] border-Red px-4 py-3 md:px-6 font-bold rounded-md focus:outline-none focus:border-Red placeholder:text-Red;
+    }
+    
+}
+
+@layer utilities{
+    .error-txt{
+        @apply text-Red font-light text-right italic text-sm mt-1;
     }
 }

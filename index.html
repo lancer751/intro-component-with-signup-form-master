@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,23 +37,28 @@
       </div>
       <div class="bg-white w-full py-7 rounded-lg shadow-[0_8px_2px_0_hsla(0,_0%,_0%,_0.20)]">
         <form action="" method="post" class="w-[87%] mx-auto space-y-4" id="formContact">
-          <div class="">
-            <input type="text" name="firstName" placeholder="First Name" class="input-form" required>
+          <div class="relative">
+            <input type="text" name="firstName" placeholder="First Name" class="input-form" required autocomplete="off">
+            <img src="./src/images/icon-error.svg" class="hidden absolute top-[14px] right-5" alt="">
           </div>
-          <div class="">
-            <input type="text" name="secondName" placeholder="Second Name" class="input-form" required>
+          <div class="relative">
+            <input type="text" name="lastName" placeholder="Last Name" class="input-form" required autocomplete="off">
+            <img src="./src/images/icon-error.svg" class="hidden absolute top-[14px] right-5" alt="">
+            
           </div>
-          <div class="">
-          <input type="email" name="userEmail" placeholder="Email Address Name" class="input-form" required>
+          <div class="relative">
+            <input type="email" name="userEmail" placeholder="Email Address" class="input-form" required autocomplete="off">
+            <img src="./src/images/icon-error.svg" class="hidden absolute top-[14px] right-5" alt="">
           </div>
-          <div class="">
-          <input type="password" name="userPassword" placeholder="Password" class="input-form" required>
+          <div class="relative">
+            <input type="password" name="userPassword" placeholder="Password" class="input-form" required>
+            <img src="./src/images/icon-error.svg" class="hidden absolute top-[14px] right-5" alt="">
           </div>
 
           <button class="bg-Green w-full hover:bg-Green/80 transition-colors text-white rounded-md py-5 uppercase font-semibold shadow-[0_5px_2px_0_hsla(154,_49%,_61%,_0.70)]">
             Claim your free trial 
           </button>
-          <p class="text-center text-[12px] text-Grayish-Blue">By clicking the button, you are agreeing to our <strong class="text-Red">Terms and Services</strong></p>
+          <p class="text-center text-[12px] text-Grayish-Blue">By clicking the button, you are agreeing to our <strong class="text-Red"><a href="#">Terms and Services</a></strong></p>
         </form>
         
       </div>
